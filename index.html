@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Estancia Municipal Population Office</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6FFWRX5NQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-M6FFWRX5NQ');
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-white" href="index.html">
+                <img class="navbar-brand1 me-2" src="DynamicDashBoard/assets/Estancia.png" alt="Estancia">
+                <span>Estancia PPO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="DynamicDashBoard/index.html" class="nav-link" target="_blank">DashBoard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vmg" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#demog" class="nav-link">Demography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#table" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#chart" class="nav-link">Charts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="#PMOC" class="nav-link">Book Schedule PMOC</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="PDF/mainpdf.html" target="_blank" class="nav-link">Files</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <header class="hero-section text-light">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content py-5">
+            <div class="row align-items-center gx-5">
+                <div class="col-lg-7">
+                    <span class="eyebrow">Estancia Population Office</span>
+                    <h1 class="text-warning display-1 mb-4 fw-bolder hero-title">Municipal Population Office</h1>
+                    <p class="lead hero-description">Touching lives through data-driven services, empowering human development with population insights, responsive programs, and trusted local guidance.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+                        <a href="https://www.iloilo-pop.com/#/home/index/news" target="_blank" class="btn btn-primary">Visit IPOP</a>
+                        <a href="https://pcdatabase.pythonanywhere.com" target="_blank" class="btn btn-outline-light">Open RPD Database</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="hero-card">
+                        <div class="card-body">
+                            <h3>Trusted population expertise</h3>
+                            <p>Estancia PPO delivers accurate demographic reporting, evidence-based planning, and high-impact community services designed to shape a thriving future.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fa-solid fa-check text-warning me-2"></i>Livable community programs</li>
+                                <li><i class="fa-solid fa-check text-warning me-2"></i>Reliable population statistics</li>
+                                <li><i class="fa-solid fa-check text-warning me-2"></i>Smart local planning support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div class="col">
+                    <div class="stat-card text-center p-4">
+                        <h3>Total Population</h3>
+                        <span class="countup" data-target="57162">0</span>
+                        <small>Household population in 2024</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stat-card text-center p-4">
+                        <h3>Barangays Covered</h3>
+                        <span class="countup" data-target="25">0</span>
+                        <small>Active barangay profiles</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="stat-card text-center p-4">
+                        <h3>Households</h3>
+                        <span class="countup" data-target="16632">0</span>
+                        <small>Local households registered</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="demog" class="new-container">
+        <div class="section-heading">
+            <span>Demography</span>
+            <h2>Basic Demographic Data</h2>
+            <p class="section-intro">Visualize Estancia's key population indicators with clear and modern data storytelling.</p>
+            <hr class="section-divider">
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="chart-card">
+                    <h4>Total Births by Year</h4>
+                    <figure>
+                        <canvas id="births"></canvas>
+                        <figcaption><small>Source: Municipal Population Profile 2024, PPO</small></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="chart-card">
+                    <h4>Total Deaths by Year</h4>
+                    <figure>
+                        <canvas id="deaths"></canvas>
+                        <figcaption><small>Source: Municipal Population Profile 2024, PPO</small></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="chart-card">
+                    <h4>Incoming Migration Trends</h4>
+                    <figure>
+                        <canvas id="InMig"></canvas>
+                        <figcaption><small>Source: Municipal Population Profile 2024, PPO</small></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="chart-card">
+                    <h4>Outgoing Migration Trends</h4>
+                    <figure>
+                        <canvas id="OutMig"></canvas>
+                        <figcaption><small>Source: Municipal Population Profile 2024, PPO</small></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Population Profile -->
+<section id="table" class="new-container">
+    <div class="section-heading">
+        <span>Profile</span>
+        <h2>Estancia Population Overview</h2>
+        <p class="section-intro">A concise population profile highlighting growth, density, age structure, and local households.</p>
+        <hr class="section-divider">
+    </div>
+    <div class="table-custom">
+        <table class="table table-dark table-hover mb-0">
+            <caption>Source: Municipal Profile 2024, PPO</caption>
+            <thead>
+                <tr>
+                    <th colspan="2" class="text-center">ESTANCIA POPULATION PROFILE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Total Number of Barangays</th>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total Land Area</th>
+                    <td>29.17 sq. km.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total Household Population</th>
+                    <td>57,162</td>
+                </tr>
+                <tr>
+                    <th scope="row">Male</th>
+                    <td>28,807</td>
+                </tr>
+                <tr>
+                    <th scope="row">Female</th>
+                    <td>28,355</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sex Ratio</th>
+                    <td>102:100</td>
+                </tr>
+                <tr>
+                    <th scope="row">Median Age</th>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <th scope="row">Doubling Time</th>
+                    <td>133 years (est. 2157)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Population Growth Rate</th>
+                    <td>0.52%</td>
+                </tr>
+                <tr>
+                    <th scope="row">No. of Households</th>
+                    <td>16,632</td>
+                </tr>
+                <tr>
+                    <th scope="row">Population Density</th>
+                    <td>1,960 persons / sq. km.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Age Dependency Ratio</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th scope="row">Child Dependency Ratio</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th scope="row">Old Dependency Ratio</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total Fertility Rate</th>
+                    <td>0.77</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    <!-- Charts -->
+    <section id="chart" class="new-container">
+        <div class="section-heading">
+            <span>Insights</span>
+            <h2>Population Trends & Dynamics</h2>
+            <p class="section-intro">Track growth and age structure with powerful visual summaries of Estancia's demographic trajectory.</p>
+            <hr class="section-divider">
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="chart-card">
+                    <h4 class="mb-3">Total Population (2021 - 2024)</h4>
+                    <figure>
+                        <canvas id="chart1"></canvas>
+                        <figcaption><small>Source: Municipal Population Profile 2021-2024, PPO</small></figcaption>
+                    </figure>
+                    <p class="mt-3">Population grew by 3.15% from 2021 to 2024, driven by natural increase, immigration, and stronger community resilience.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="chart-card">
+                    <h4 class="mb-3">2024 Population Pyramid</h4>
+                    <figure>
+                        <canvas id="chart2"></canvas>
+                        <figcaption><small>Source: Municipal Population Profile 2024, PPO</small></figcaption>
+                    </figure>
+                    <p class="mt-3">The age structure shows a broad young base and growing workforce, positioning Estancia for sustainable development while planning for future aging needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Mission Goals Section -->
+    <section id="vmg" class="new-container py-5">
+        <div class="section-heading">
+            <span>Purpose</span>
+            <h2>Vision, Mission & Goals</h2>
+            <p class="section-intro">Leading Estancia with a vision for inclusive growth, a mission for trusted population service, and goals that empower communities.</p>
+            <hr class="section-divider">
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="vmg-card p-4 text-start">
+                    <div class="vmg-header">
+                        <div class="vmg-icon"><i class="fa-solid fa-eye"></i></div>
+                        <span class="vmg-chip">Vision</span>
+                    </div>
+                    <h4 class="mb-3">Our Vision</h4>
+                    <p>By 2025, the Provincial Population Office will be the trusted population information partner across Region VI—dynamic, people-centered, tech-enabled, and deeply rooted in local culture.</p>
+                    <p class="text-muted">We envision a future where Estancia's people thrive through smarter planning, stronger partnerships, and responsive services.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="vmg-card p-4 text-start">
+                    <div class="vmg-header">
+                        <div class="vmg-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        <span class="vmg-chip">Mission</span>
+                    </div>
+                    <h4 class="mb-3">Our Mission</h4>
+                    <p>We equip local government units, partner agencies, and communities with reliable population insights, practical guidance, and inclusive programs that improve quality of life across Iloilo.</p>
+                    <p class="text-muted">Our work is centered on evidence, collaboration, and service delivery that helps people and leaders make better decisions.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="vmg-card p-4 text-start">
+                    <div class="vmg-header">
+                        <div class="vmg-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+                        <span class="vmg-chip">Goals</span>
+                    </div>
+                    <h4 class="mb-3">Our Goals</h4>
+                    <ol>
+                        <li>Build a responsive, up-to-date population data system for smarter planning.</li>
+                        <li>Deliver timely information that strengthens local programs and stakeholder decisions.</li>
+                        <li>Create learning opportunities that empower citizens through population and development awareness.</li>
+                        <li>Adopt modern tools and efficient processes for better data management and service delivery.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="vmg-card p-4 text-start">
+                    <div class="vmg-header">
+                        <div class="vmg-icon"><i class="fa-solid fa-heart"></i></div>
+                        <span class="vmg-chip">Values</span>
+                    </div>
+                    <h4 class="mb-3">Core Values</h4>
+                    <ul>
+                        <li><strong>Service:</strong> Put people first, always.</li>
+                        <li><strong>Innovation:</strong> Seek new ways to improve population programs.</li>
+                        <li><strong>Excellence:</strong> Deliver high-quality, dependable work.</li>
+                        <li><strong>Integrity:</strong> Act honestly and transparently in every collaboration.</li>
+                        <li><strong>Teamwork:</strong> Achieve more together with respect and unity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+<!-- Services -->
+    <section id="services" class="new-container">
+        <div class="section-heading">
+            <span>Services</span>
+            <h2>What We Offer</h2>
+            <p class="section-intro">High-impact programs and population services that support Estancia's development priorities.</p>
+            <hr class="section-divider">
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Population Data Management</h3>
+                    <ul>
+                        <li>Provision of population data and reports</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <i class="fa-solid fa-children"></i>
+                    <h3>Adolescent Health & Youth Development</h3>
+                    <ul>
+                        <li>School-based teen center support</li>
+                        <li>Health and education lectures</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                    <h3>Responsible Parenthood</h3>
+                    <ul>
+                        <li>Pre-marriage orientation and counseling</li>
+                        <li>Family development sessions</li>
+                        <li>Responsible sexuality education</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <h3>Population & Development Integration</h3>
+                    <ul>
+                        <li>Gender-responsive planning training</li>
+                        <li>Population development workshops</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner text-center reveal">
+        <div class="container py-5">
+            <h2>Discover Estancia’s population insights with a modern experience.</h2>
+            <p class="mb-4">Download the latest municipal and barangay profiles, then book your PMOC appointment without leaving the page.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="PDF/mainpdf.html" class="btn btn-warning btn-lg">Download Reports</a>
+                <a href="#PMOC" class="btn btn-outline-light btn-lg">Book PMOC Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-section reveal py-5">
+        <div class="container">
+            <div class="section-heading">
+                <span>Trusted By</span>
+                <h2>Community and government partners rely on our data.</h2>
+                <p class="section-intro">Estancia PPO is recognized for accurate reporting, responsive service, and strong community collaboration.</p>
+                <hr class="section-divider">
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="trust-card p-4">
+                        <i class="fa-solid fa-shield-halved fa-2x text-warning mb-3"></i>
+                        <h4>Proven Accuracy</h4>
+                        <p>Local planners use our population reports to build safer, smarter programs every year.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trust-card p-4">
+                        <i class="fa-solid fa-handshake-angle fa-2x text-warning mb-3"></i>
+                        <h4>Trusted Partnerships</h4>
+                        <p>Partner LGUs and civic groups depend on our timely and actionable demographics.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trust-card p-4">
+                        <i class="fa-solid fa-star fa-2x text-warning mb-3"></i>
+                        <h4>Community First</h4>
+                        <p>Residents appreciate our clear guidance, service support, and citizen-driven outreach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="inputModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>Input Population Data</h2>
+            <form id="populationForm">
+                <div>
+                    <label for="ageGroup">Age Group</label>
+                    <input type="text" id="ageGroup" name="ageGroup" placeholder="e.g., 0-9">
+                </div>
+                <div>
+                    <label for="maleData">Male Population</label>
+                    <input type="number" id="maleData" name="maleData">
+                </div>
+                <div>
+                    <label for="femaleData">Female Population</label>
+                    <input type="number" id="femaleData" name="femaleData">
+                </div>
+                <button type="button" id="submitDataBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+<!-- PMOC-->
+    <section id="PMOC" class="new-container mt-lg-4">
+        <div class="section-heading">
+            <span>Appointment</span>
+            <h2>Book Pre-Marriage Orientation</h2>
+            <p class="section-intro">Schedule your PMOC session directly using the form link below.</p>
+            <hr class="section-divider">
+        </div>
+        <div class="chart-card text-center py-5">
+            <h3>Ready to book your appointment?</h3>
+            <p>Click the button to open the booking form and reserve your  schedule.</p>
+            <a href="https://forms.gle/r8W3VZ7ZNQZoKBvX7" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Open Booking Form</a>
+        </div>
+    </section>
+    
+    <!-- Contact & Map -->
+   <section id="contact" class="new-container">
+        <div class="section-heading">
+            <span>Contact</span>
+            <h2>Connect with Estancia PPO</h2>
+            <p class="section-intro">Reach out for population data, local planning support, or program coordination.</p>
+            <hr class="section-divider">
+        </div>
+        <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+                <div class="contact-card">
+                    <h3>Contact Info</h3>
+                    <ul class="list-group list-group-flush mt-4">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span>
+                            <span class="mx-2 h6">Poblacion Zone 1, Estancia, Iloilo</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">PPO Lead:</span>
+                            <span class="mx-2 h6">Bernadine Y. Adaniel</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone:</span>
+                            <span class="mx-2 h6">(+63) 963-160-0964</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span>
+                            <a class="mx-2 h6 text-decoration-none" href="mailto:ppoestancia@gmail.com">ppoestancia@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1yVIe8Ojmu-tO3ffPDOnxqci5XJH2Jb8&ehbc=2E312F" width="100%" height="450" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead fs-6 fst-italic">Copyright &copy; 2024. All rights reserved.</p>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+    </footer>
+
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
