@@ -74,27 +74,27 @@
   }
 
   function initCharts() {
-    createChart('births', 'bar', ['2021', '2022', '2023', '2024'], [{
+    createChart('births', 'bar', ['2021', '2022', '2023', '2024', '2025'], [{
       label: 'Births',
-      data: [862, 890, 915, 940],
+      data: [862, 890, 915, 940, 436],
       backgroundColor: 'rgba(255, 183, 3, 0.75)',
       borderColor: 'rgba(255, 183, 3, 1)',
       borderWidth: 2,
       borderRadius: 10
     }]);
 
-    createChart('deaths', 'bar', ['2021', '2022', '2023', '2024'], [{
+    createChart('deaths', 'bar', ['2021', '2022', '2023', '2024', '2025'], [{
       label: 'Deaths',
-      data: [310, 328, 335, 345],
+      data: [310, 328, 335, 345, 276],
       backgroundColor: 'rgba(71, 179, 255, 0.74)',
       borderColor: 'rgba(71, 179, 255, 0.98)',
       borderWidth: 2,
       borderRadius: 10
     }]);
 
-    createChart('InMig', 'line', ['2021', '2022', '2023', '2024'], [{
+    createChart('InMig', 'line', ['2021', '2022', '2023', '2024', '2025'], [{
       label: 'In-migration',
-      data: [210, 225, 248, 263],
+      data: [210, 225, 248, 263, 607],
       borderColor: 'rgba(76, 175, 80, 1)',
       backgroundColor: 'rgba(76, 175, 80, 0.22)',
       borderWidth: 2,
@@ -104,9 +104,9 @@
       pointBackgroundColor: '#ffd43b'
     }]);
 
-    createChart('OutMig', 'line', ['2021', '2022', '2023', '2024'], [{
+    createChart('OutMig', 'line', ['2021', '2022', '2023', '2024', '2025'], [{
       label: 'Out-migration',
-      data: [190, 178, 162, 150],
+      data: [190, 178, 162, 150, 342],
       borderColor: 'rgba(255, 87, 34, 1)',
       backgroundColor: 'rgba(255, 87, 34, 0.22)',
       borderWidth: 2,
@@ -116,9 +116,9 @@
       pointBackgroundColor: '#ffd43b'
     }]);
 
-    createChart('chart1', 'line', ['2021', '2022', '2023', '2024'], [{
+    createChart('chart1', 'line', ['2021', '2022', '2023', '2024', '2025'], [{
       label: 'Population',
-      data: [54580, 55450, 56200, 57162],
+      data: [54580, 55450, 56200, 57162, 57587],
       borderColor: 'rgba(16, 185, 129, 1)',
       backgroundColor: 'rgba(16, 185, 129, 0.22)',
       borderWidth: 2,
@@ -133,10 +133,10 @@
       }
     });
 
-    createChart('chart2', 'bar', ['0-9', '10-19', '20-29', '30-39', '40-49', '50-59', '60+'], [
+    createChart('chart2', 'bar', ['0-4','5-9', '10-14', '15-19',  '20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64',  '65-69',  '70-74', '75-79', '80+'], [
       {
         label: 'Male',
-        data: [-6800, -7200, -7600, -7000, -6200, -5100, -3100],
+        data: [-1153, -1988, -2756, -3020, -3001, -2961, -2625, -2288, -1772, -1737, -1450, -1292, -1073, -788, -516, -352, -285],
         backgroundColor: 'rgba(59, 130, 246, 0.75)',
         borderColor: 'rgba(59, 130, 246, 1)',
         borderWidth: 2,
@@ -144,7 +144,7 @@
       },
       {
         label: 'Female',
-        data: [7000, 7300, 7500, 6900, 6100, 5000, 3200],
+        data: [1114, 1897, 2595, 2926, 2985, 2882, 2617, 1938, 1711, 1662, 1352, 1245, 1044, 890, 655, 490, 527],
         backgroundColor: 'rgba(236, 72, 153, 0.75)',
         borderColor: 'rgba(236, 72, 153, 1)',
         borderWidth: 2,
