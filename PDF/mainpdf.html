@@ -188,8 +188,8 @@
 
              <div class="download-section">
                 <h3>2025 Municipal and Barangay Profiles</h3>
-                <label for="pdf-select2">Choose a PDF to download:</label>
-                <select id="pdf-select2" name="2025Mun&BrgyProfiles">
+                <label for="pdf-select3">Choose a PDF to download:</label>
+                <select id="pdf-select3" name="2025Mun&BrgyProfiles">
                     <option value="2025Mun&BrgyProfiles/Estancia2025.pdf">MUNICIPAL PROFILE</option>
                     <option value="2025Mun&BrgyProfiles/Bayas.pdf">BAYAS</option>
                     <option value="2025Mun&BrgyProfiles/Bayuyan.pdf">BAYUYAN</option>
@@ -231,6 +231,7 @@
         const detailsStatus = document.getElementById('detailsStatus');
         const download2023 = document.getElementById('download2023');
         const download2024 = document.getElementById('download2024');
+        const download2024 = document.getElementById('download2025');
 
         function validateDetails() {
             const nameValid = fullName.value.trim().length > 2;
@@ -322,8 +323,12 @@
             window.location.href = selectedValue;
         }
 
-        function downloadPDF() {
+        function downloadPDF2() {
             const selectedValue = document.getElementById('pdf-select2').value;
+            window.location.href = selectedValue;
+        }
+         function downloadPDF3() {
+            const selectedValue = document.getElementById('pdf-select3').value;
             window.location.href = selectedValue;
         }
 
@@ -340,7 +345,14 @@
                 alert('Please confirm your details before downloading.');
                 return;
             }
-            downloadPDF();
+            downloadPDF2();
+        });
+         download2025.addEventListener('click', function () {
+            if (!validateDetails()) {
+                alert('Please confirm your details before downloading.');
+                return;
+            }
+            downloadPDF3();
         });
     </script>
 </body>
